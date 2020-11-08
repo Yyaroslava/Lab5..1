@@ -23,7 +23,7 @@ int main()
 double c(double t, double s) 
 
 {
-    double gg = f(t, s, 2) + f(1, s + t, t - s) / (1 + pow(f(1, 1, t * t + s * s), 2));
+    double gg = (((f(t, s, 2)) + (f(1, s + t, t - s))) / (1 + pow(f(1, 1, pow(t, 2) + pow(s, 2)), 2)));
     gg = round(gg * 100000) / 100000;
     return gg;
 }
